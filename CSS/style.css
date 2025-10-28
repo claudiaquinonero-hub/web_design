@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+
 *{
     margin: 0;
     padding: 0;
@@ -8,7 +11,10 @@
 }
 
 
-@import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+a {
+    color: rgb(97, 23, 23);
+    text-decoration: none;
+}
 
 h1 {
     font-family: "imperial-script-regular";
@@ -38,75 +44,35 @@ h3 {
     justify-content: center;
 }
 
-a {
-    color: rgb(97, 23, 23);
-    text-decoration: none;
+@media (max-width: 1000px) {
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+        color: antiquewhite;
+        margin-top: 5%;
+        display: flex;
+        justify-content: center;
+    }
 }
 
-.menu{
-    padding: 24px 0;
-    display: flex;
-    justify-content: space-between;
+@media (max-width: 768px) {
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 40px;
+        color: antiquewhite;
+        margin-top: 5%;
+    }
 }
 
-
-
-.menu ul {
-    list-style: none;
-    display: flex;
-    gap: 24px;
+@media (max-width: 460px) {
+    h1 {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 30px;
+        color: antiquewhite;
+        margin-top: 5%;
+        margin-left: 20%s;
+    }
 }
-
-
-.menu ul li a {
-    font-size: 30px;
-    font-weight: bold;
-    font-family: "imperial-script-regular";
-}
-
-
-.menu ul li a:hover {
-    color: rgb(70, 210, 163);
-}
-
-.index {
-    background-color: antiquewhite;
-}
-
-
-.viñedo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 10px;
-}
-
-.viñedo > img {
-    height: 300px;
-    width: 300px;
-    border-radius: 150px;
-} 
-
-.sect {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 200px; 
-    margin-top: 20px;
-}
-
-.one {
-    margin-right: 100px;
-}
-
-.two {
-    margin-right: 100px;
-}
-
-.three {
-    margin-right: 30px;
-}
-
 
 /* FOOTER */
 
@@ -120,6 +86,7 @@ footer {
     padding: 22px 15px;
     position: relative;
     color: rgb(255, 255, 255);
+    border-radius: 30px;
 }
 
 
@@ -176,15 +143,87 @@ footer {
         position: relative;
     }
 }
-    
 
+/* MENU */
+
+.menu{
+    padding: 24px 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 24px;
+}
+
+
+.menu ul li a {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "imperial-script-regular";
+}
+
+
+.menu ul li a:hover {
+    color: rgb(179, 192, 80);
+}
+
+/* INDEX */
+
+
+.index {
+    background-color: antiquewhite;
+}
+
+
+.viñedo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.viñedo > img {
+    height: 300px;
+    width: 300px;
+    border-radius: 150px;
+} 
+
+.sect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 150px; 
+    margin-top: 20px;
+}
+
+.one {
+    margin-right: 100px;
+}
+
+.two {
+    margin-right: 100px;
+}
+
+.three {
+    margin-right: 30px;
+}
 
 .up {
-    margin-top: 50px;
+
     align-items: center;
-    height: 70%;
-    width: 70%;
-    margin-left: 16%;
+    height: 80%;
+    width: 80%;
+    margin: auto;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    border-radius: 50px;
 }
 
 
@@ -198,11 +237,11 @@ footer {
     width: 200px;
     margin-bottom: 10%;
     font-size: 15px;
-    margin-left: 40%;
+    margin-left: 43%;
 }
 
-.boton:hover {
-    background-color: rgb(70, 210, 163);
+.boton-txt:hover {
+    background-color: rgb(179, 192, 80);
 }
 
 
@@ -226,98 +265,6 @@ footer {
     margin-left: 20%;
 }
 
-/* h1 {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 50px;
-    color: rgb(0, 0, 0);
-    margin-bottom: 100px;
-    display: flex;
-    justify-content: center;
-} */
-
-@media (max-width: 1000px) {
-    h1 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 50px;
-        color: antiquewhite;
-        margin-top: 5%;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 40px;
-        color: antiquewhite;
-        margin-top: 5%;
-    }
-}
-
-@media (max-width: 460px) {
-    h1 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 30px;
-        color: antiquewhite;
-        margin-top: 5%;
-        margin-left: 20%s;
-    }
-}
-
-/* SPANS */
-
-
-span {
-    color: rgb(160, 124, 195);
-}
-
-.s1 {
-    color: #ed1616;
-    margin-right: 0.5%;
-    margin-left: 0.5%;
-}
-
-.s2 {
-    color: #fefa1b;
-    margin-right: 0.5%;
-    margin-left: 0.5%;
-}
-
-.s3 {
-    color: #35e4f1;
-    margin-right: 0.5%;
-    margin-left: 0.5%;
-}
-
-
-.color {
-    color: rgb(215, 174, 201);
-}
-
-h4 {
-    margin-top: 5%;
-    font-size: 130%;
-    margin-left: 20%;
-    margin-right: 20%;
-    color: antiquewhite;
-}
-
-/* h2 {
-    margin-top: 3%;
-    font-size: 130%;
-    color: rgb(0, 0, 0);
-    display: flex;
-    justify-content: center;
-} */
-
-h6 {
-    margin-top: 3%;
-    font-size: 130%;
-    margin-left: 20%;
-    margin-right: 20%;
-    color: antiquewhite;
-}
 
 .pollo {
     height: 5%;
@@ -462,12 +409,6 @@ h6 {
     }
 }
 
-h5 {
-    color: antiquewhite;
-    font-size: 130%;
-    margin-top: 10%;
-    border-radius: 5%;
-}
 
 .container {
     display: flex;
