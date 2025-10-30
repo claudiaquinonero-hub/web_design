@@ -394,6 +394,83 @@ footer {
     background-color: blueviolet;
 }
 
+
+img,iframe {
+    width: 100%;
+    vertical-align: middle;
+}
+
+.galeria {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 50px;
+}
+
+.galeria > * {
+    width: 25%;
+}
+
+.galeria > figure > figcaption {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    font-family: "Playfair Display", serif;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.galeria > figure > figcaption:hover {
+    opacity: 100%;
+}
+
+.galeria > figure {
+    position: relative;
+}
+
+
+@media screen and (max-width: 1200px) {
+    section {
+        padding: 3em 10%;
+    }
+    .galeria > figure {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    section > h2 {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .galeria > figure,
+    .galeria > iframe {
+        width: 100%;
+    }
+    .galeria > figure > figcaption {
+        opacity: 1;
+        position: static;
+        height: auto;
+        background-color: transparent;
+        color: black;
+        font-size: 1em;
+        font-weight: normal;
+        justify-content: start;
+    }
+}
+
 /* OPINIONS */
 
 .op {
