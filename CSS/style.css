@@ -290,6 +290,17 @@ footer p {
 
 /* INFORMACIÓN */
 
+/* .fondobody {
+    background-image: url(../MEDIA/corcho.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+} */
+
+
+.experiencia {
+    margin-top: 10%;
+}
+
 .galeria {
     display: flex;
     justify-content: space-around;
@@ -370,7 +381,7 @@ footer p {
 .info1 {
     height: 30%;
     width: 30%;
-    margin-top: 10%;
+    margin-top: 12%;
     margin-left: 5%;
 }
 
@@ -389,11 +400,12 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 5%;
+  margin-top: 10%;
 }
 
 .video1 {
-  width: 60%;
+  width: 70%;
+  height: 50%;
   max-width: 800px;
   aspect-ratio: 16 / 9;
   border-radius: 20px;
@@ -407,12 +419,21 @@ img,iframe {
 }
 
 
+.start-text {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  max-width: 900px;
+}
+
 
 /* OPINIONS */
 
 .op {
     padding: 40px;
-    border: 5px rgb(97, 23, 23) solid;
+    border: 5px rgb(193, 215, 26) solid;
+    background-color: rgb(234, 237, 203);
     border-radius: 5%;
     height: fit-content;
     width: 300px;
@@ -508,12 +529,7 @@ form {
     background-color: rgb(193, 215, 26);
 }
 
-.meses {
-     border: 2px  rgb(193, 215, 26) solid;
-     width: 300px;
-     height: 70px;
-     margin-left: 36%;
-}
+
 
 /* EFECTO */
 
@@ -652,7 +668,7 @@ main {
 
 #foodMenu form #buyFood.disabled {
     background-color: #ccc;
-    color: #666;
+    color: #666666;
     cursor: not-allowed;
 }
 
