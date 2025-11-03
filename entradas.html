@@ -103,50 +103,74 @@
             </div>
     
             <h1>Choose the experience</h1>
-            <main>
-            <section id="foodMenu">
-                <form action="">
-                    <div>
-                        <label for="burger">Visita bodega - 20€</label>
-                        <input
-                            type="number"
-                            name="burger"
-                            id="burger"
-                            min="0"
-                            value="0"
-                            data-price="7.9" />
-                    </div>
-                    <div>
-                        <label for="pizza">Visita bodega + cata - 40€</label>
-                        <input
-                            type="number"
-                            name="pizza"
-                            id="pizza"
-                            min="0"
-                            value="0"
-                            data-price="12.30" />
-                    </div>
-                    <div>
-                        <label for="salad">Visita bodega + cata + vendimia - 50€</label>
-                        <input
-                            type="number"
-                            name="salad"
-                            id="salad"
-                            min="0"
-                            value="0"
-                            data-price="6" />
-                    </div>
-                    <div class="total-price-cont">
-                        <p>Total price:</p>
-                        <p id="totalPrice"></p>
-                    </div>
-                    <input id="buyFood" type="submit" value="Buy tickets" class="disabled" />
-                </form>
+            
+            <section class="calculo">
+                <main>
+                    <section id="experiencia">
+                <div class="galeria2">
+                    <figure>
+                        <img src="MEDIA/copa.webp" alt="">
+                        <figcaption>Visita a la bodega</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="MEDIA/copa.webp" alt="">
+                        <figcaption>Visita a la bodega + cata</figcaption>
+                    </figure>
+                    <figure>
+                        <img src="MEDIA/uvas.jpg" alt="">
+                        <figcaption>Visita a la bodega + cata + vendimia</figcaption>
+                    </figure>
+                </div>
             </section>
-        </main>
+                <section id="foodMenu">
+                    <form action="">
+                        <div>
+                            <label for="burger">Visita bodega - 20€</label>
+                            <input
+                                type="number"
+                                name="burger"
+                                id="burger"
+                                min="0"
+                                value="0"
+                                data-price="7.9" />
+                        </div>
+                        <div>
+                            <label for="pizza">Visita bodega + cata - 40€</label>
+                            <input
+                                type="number"
+                                name="pizza"
+                                id="pizza"
+                                min="0"
+                                value="0"
+                                data-price="12.30" />
+                        </div>
+                        <div>
+                            <label for="salad">Visita bodega + cata + vendimia - 50€</label>
+                            <input
+                                type="number"
+                                name="salad"
+                                id="salad"
+                                min="0"
+                                value="0"
+                                data-price="6" />
+                        </div>
+                        <div class="total-price-cont">
+                            <p>Total price:</p>
+                            <p id="totalPrice"></p>
+                        </div>
+                        <input id="buyFood" type="submit" value="Buy tickets" class="disabled" />
+                    </form>
+                </main>
+                <script src="js/script.js"></script>
+                </section>
+                </section>
+    
 
-        <script src="js/script.js"></script>
+
             <h2>We expect you have a great experience!</h2>
+
+
+
             <footer>
                 <div class="options">
                     <a href="index.html">Menu</a>
