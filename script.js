@@ -1,36 +1,46 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const inputs = document.querySelectorAll('input[type="number"]');
+    const inputs = document.querySelectorAll('.experiencia-item input[type="number"]');
     const totalPriceElement = document.getElementById("totalPrice");
+    const buyButton = document.getElementById("buyFood");
 
-    // Añade a cada input un evento change para calcular el precio total
-    inputs.forEach((input) => {
-        input.addEventListener("change", calculateTotalPrice);
-    });
-
-    // Función para calcular el precio total
     function calculateTotalPrice() {
         let totalPrice = 0;
+
         inputs.forEach((input) => {
             const price = parseFloat(input.dataset.price) || 0;
             const quantity = parseInt(input.value) || 0;
             totalPrice += price * quantity;
-
-            // Si el precio es mayor que 0, se habilita el botón de comprar
-            if (totalPrice > 0) {
-                document.getElementById("buyFood").classList.remove("disabled");
-            } else {
-                document.getElementById("buyFood").classList.add("disabled");
-            }
         });
+
         totalPriceElement.textContent = totalPrice.toFixed(2) + " €";
+
+        if (totalPrice > 0) {
+            buyButton.classList.remove("disabled");
+            buyButton.disabled = false;
+        } else {
+            buyButton.classList.add("disabled");
+            buyButton.disabled = true;
+        }
     }
 
-    // La primera llamada a la función hará el calculo inicial para poner 0.00 €
-    calculateTotalPrice();
-
-    // Evitar el envio del formulario si el usuario pulsa enter o el precio es 0
-    document.getElementById("form").addEventListener("submit", function (event) {
-        event.preventDefault();
+    inputs.forEach((input) => {
+        input.addEventListener("input", calculateTotalPrice);
+        input.addEventListener("change", calculateTotalPrice);
     });
+
+    // Si el botón se pulsa sin seleccionar entradas, muestra aviso
+    buyButton.addEventListener("click", function (event) {
+        const total = parseFloat(totalPriceElement.textContent);
+        if (isNaN(total) || total === 0) {
+            event.preventDefault();
+            alert("Por favor selecciona al menos una entrada antes de continuar.");
+        } else {
+            alert("¡Gracias por tu compra! Total: " + total.toFixed(2) + " €");
+        }
+    });
+
+    calculateTotalPrice();
 });
+
+
 
