@@ -44,3 +44,32 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+// Abre el menu
+
+function openMenu() {
+    console.log("Función openMenu");
+    document.getElementById("menu").firstElementChild.lastElementChild.style.left = "0";
+}
+
+// Cierra el menu
+
+function closeMenu() {
+    console.log("Función openMenu");
+    document.getElementById("menu").firstElementChild.lastElementChild.style.left = "-100%";
+}
+
+// Abre la ventana modal
+
+function openModal(figura) {
+    console.log("Función openModal");
+    // Buscamos la ventana modal
+    var modal = document.getElementById("modal");
+    modal.style.display = "flex";
+}
+
+function closeModal() {
+    console.log("Función openModal");
+    // Buscamos la ventana modal
+    var modal = document.getElementById("modal");
+    modal.style.display = "none";
+}
