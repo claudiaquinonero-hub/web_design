@@ -245,17 +245,6 @@ footer p {
     margin-top: 20px;
 }
 
-.one {
-    margin-right: 100px;
-}
-
-.two {
-    margin-right: 100px;
-}
-
-.three {
-    margin-right: 30px;
-}
 
 .up {
 
@@ -280,7 +269,6 @@ footer p {
     width: 200px;
     margin-bottom: 10%;
     font-size: 15px;
-    margin-left: 43%;
 }
 
 .boton-txt:hover {
@@ -288,13 +276,30 @@ footer p {
 }
 
 
+@media (max-width: 768px) {
+    .viñedo > img {
+    height: 100px;
+    width: 100px;
+    border-radius: 150px;
+} 
+}
+
+@media (max-width: 460px) {
+    .viñedo > img {
+    height: 50px;
+    width: 50px;
+    border-radius: 150px;
+} 
+}
+
 /* INFORMACIÓN */
 
-/* .fondobody {
-    background-image: url(../MEDIA/corcho.jpg);
+.fondobody {
+    background-image: url(https://img.freepik.com/fotos-premium/fondo-frutas-uvas-uvas-verdes-arriba-panorama_770123-506.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
-} */
+}
+
 
 
 .experiencia {
@@ -377,6 +382,37 @@ footer p {
     flex-direction: row;
     justify-content: space-around;
 }
+@media (max-width: 768px) {
+.bodega {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info1 {
+    height: 60%;
+    width: 60%;
+    margin-top: 12%;
+    margin-left: 60%;
+}
+}
+
+@media (max-width: 460px) {
+.bodega {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.info1 {
+    height: 60%;
+    width: 60%;
+    margin-top: 12%;
+    margin-left: 5%;
+    display: flex;
+}
+}
 
 .info1 {
     height: 30%;
@@ -419,16 +455,26 @@ img,iframe {
 }
 
 
-.start-text {
-  z-index: 1;
-  position: relative;
-  text-align: center;
-  backdrop-filter: blur(5px);
-  max-width: 900px;
+
+/* OPINIONS */
+
+.fondobody2 {
+    background-image: url(https://img.freepik.com/fotos-premium/fondo-frutas-uvas-uvas-verdes-arriba-panorama_770123-506.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
 }
 
 
-/* OPINIONS */
+.wrapper {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 100%;
+  /* max-width: 900px; */
+}
+
 
 .op {
     padding: 40px;
@@ -473,6 +519,22 @@ img,iframe {
     display: flex;
     justify-content: space-around;
 }
+
+@media (max-width: 768px) {
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+}
+
+@media (max-width: 460px) {
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+}
+
 
 form {
     margin-left: 35%;
