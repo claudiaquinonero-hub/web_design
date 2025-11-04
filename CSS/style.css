@@ -1,138 +1,80 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Imperial+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
-
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-
 a {
     color: rgb(97, 23, 23);
     text-decoration: none;
 }
 
+
 h1 {
-    font-family: "imperial-script-regular";
+    font-family: "Imperial Script", cursive;
     color: rgb(97, 23, 23);
-    justify-content: center;
     font-size: 50px;
     margin-bottom: 50px;
     display: flex;
     justify-content: center;
 }
 
-h2 {
+h2, h3 {
     font-family: "Playfair Display", serif;
-    margin-top: 3%;
-    font-size: 130%;
     color: rgb(69, 56, 68);
     display: flex;
     justify-content: center;
-}
-
-h3 {
-    font-family: "Playfair Display", serif;
     margin-top: 3%;
-    font-size: 100%;
-    color: rgb(69, 56, 68);
-    display: flex;
-    justify-content: center;
 }
 
+h2 { font-size: 130%; }
+h3 { font-size: 100%; }
 
 h4 {
     font-family: "Playfair Display", serif;
-    margin-top: 30px;
-    margin-left: 150px;
-    margin-right: 150px;
-    font-size: 100%;
     color: rgb(50, 16, 16);
+    margin: 30px 30%;
+    font-size: 100%;
     display: flex;
     justify-content: center;
     text-shadow: 2px 2px 5px rgb(230, 230, 230);
-    margin-right: 30%;
-    margin-left: 30%;
 }
 
 h5 {
-    font-family: "imperial-script-regular";
+    font-family: "Imperial Script", cursive;
     color: rgb(97, 23, 23);
-    justify-content: center;
     font-size: 50px;
-    margin-top: 30px;
     display: flex;
     justify-content: center;
+    margin-top: 30px;
     text-shadow: 2px 2px 5px rgb(230, 230, 230);
 }
 
 p {
-    font-family: "imperial-script-regular";
+    font-family: "Imperial Script", cursive;
     color: rgb(97, 23, 23);
-    justify-content: center;
     font-size: 18px;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    margin-top: 50px;
     text-align: center;
     margin: 30px;
 }
 
-@media (max-width: 1000px) {
-    h1 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 50px;
-        color: antiquewhite;
-        margin-top: 5%;
-        display: flex;
-        justify-content: center;
-    }
-}
-
-@media (max-width: 768px) {
-    h1 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 40px;
-        color: antiquewhite;
-        margin-top: 5%;
-    }
-}
-
-@media (max-width: 460px) {
-    h1 {
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        font-size: 30px;
-        color: antiquewhite;
-        margin-top: 5%;
-        margin-left: 20%s;
-    }
-}
-
-/* FOOTER */
-
+/* Footer */
 
 footer {
-    margin-top: 100px;
-    margin-bottom: 50px;
-    margin-left: 70px;
-    margin-right: 70px;
+    margin: 100px 70px 50px;
     background-color: rgb(97, 23, 23);
     padding: 22px 15px;
-    position: relative;
-    color: rgb(255, 255, 255);
+    color: #fff;
     border-radius: 30px;
 }
 
-footer p {
-    color: #fff;
-}
-
-
+footer p { color: #fff; }
 
 .options {
     display: flex;
@@ -143,60 +85,28 @@ footer p {
 }
 
 .options a {
-    text-decoration: none;
-    color: rgb(255, 255, 255);
+    color: #fff;
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 500;
-    font-style: normal;
 }
-
-
 
 .contact {
     margin-top: 50px;
     font-size: 15px;
     letter-spacing: 1px;
-    font-weight: 300;
-    font-style: normal;
-    color: rgb(255, 255, 255);
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
 }
 
+/* Menú */
 
-@media (max-width: 1000px) {
-
-    footer {
-        margin-top: 100px;
-        margin-bottom: 50px;
-        background-color: rgb(206, 187, 223);
-        padding: 45px 30px;
-        position: relative;
-    }
-}
-
-@media (max-width: 768px) {
-    footer {
-        margin-top: 100px;
-        margin-bottom: 50px;
-        background-color: rgb(206, 187, 223);
-        padding: 45px 30px;
-        position: relative;
-    }
-}
-
-/* MENU */
-
-.menu{
+.menu {
     padding: 24px 0;
     display: flex;
     justify-content: center;
     background-color: transparent;
 }
-
-
 
 .menu ul {
     list-style: none;
@@ -204,71 +114,56 @@ footer p {
     gap: 24px;
 }
 
-
 .menu ul li a {
     font-size: 30px;
     font-weight: bold;
-    font-family: "imperial-script-regular";
+    font-family: "Imperial Script", cursive;
 }
-
 
 .menu ul li a:hover {
     color: rgb(193, 215, 26);
 }
 
-/* INDEX */
+/* Index */
 
-
-.index {
-    background-color: antiquewhite;
-}
-
+.index { background-color: antiquewhite; }
 
 .viñedo {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
     margin-top: 10px;
 }
 
-.viñedo > img {
+.viñedo img {
     height: 300px;
     width: 300px;
     border-radius: 150px;
-} 
+}
 
 .sect {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-    margin-bottom: 150px; 
-    margin-top: 20px;
+    margin: 20px 0 150px;
 }
 
-
 .up {
-
-    align-items: center;
-    height: 80%;
-    width: 80%;
-    margin: auto;
     display: block;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    width: 80%;
+    margin: 50px auto 20px;
     border-radius: 50px;
 }
 
-
 .boton-txt {
     padding: 8px 12px;
-    background-color:rgb(97, 23, 23);
+    background-color: rgb(97, 23, 23);
     color: aliceblue;
     border-radius: 8px;
     border: none;
     height: 50px;
     width: 200px;
-    margin-bottom: 10%;
     font-size: 15px;
+    margin: 0 auto 10%;
+    display: block;
 }
 
 .boton-txt:hover {
@@ -276,35 +171,13 @@ footer p {
 }
 
 
-@media (max-width: 768px) {
-    .viñedo > img {
-    height: 100px;
-    width: 100px;
-    border-radius: 150px;
-} 
-}
-
-@media (max-width: 460px) {
-    .viñedo > img {
-    height: 50px;
-    width: 50px;
-    border-radius: 150px;
-} 
-}
-
-/* INFORMACIÓN */
-
 .fondobody {
     background-image: url(https://img.freepik.com/fotos-premium/fondo-frutas-uvas-uvas-verdes-arriba-panorama_770123-506.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 
-
-
-.experiencia {
-    margin-top: 10%;
-}
+.experiencia { margin-top: 10%; }
 
 .galeria {
     display: flex;
@@ -314,149 +187,59 @@ footer p {
     margin-top: 50px;
 }
 
-.galeria > * {
+.galeria figure {
+    position: relative;
     width: 25%;
 }
 
-.galeria > figure > figcaption {
+.galeria figcaption {
     background-color: rgba(0, 0, 0, 0.5);
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1em;
     color: white;
-    font-weight: bold;
     font-family: "Playfair Display", serif;
     opacity: 0;
     transition: 0.5s;
 }
 
-.galeria > figure > figcaption:hover {
-    opacity: 100%;
-}
-
-.galeria > figure {
-    position: relative;
-}
-
-@media screen and (max-width: 1200px) {
-    section {
-        padding: 3em 10%;
-    }
-    .galeria > figure {
-        width: 45%;
-    }
-}
-
-@media screen and (max-width: 650px) {
-    section > h2 {
-        font-size: 1.5em;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .galeria > figure,
-    .galeria > iframe {
-        width: 100%;
-    }
-    .galeria > figure > figcaption {
-        opacity: 1;
-        position: static;
-        height: auto;
-        background-color: transparent;
-        color: black;
-        font-size: 1em;
-        font-weight: normal;
-        justify-content: start;
-    }
-} 
-
+.galeria figcaption:hover { opacity: 1; }
 
 .bodega {
     display: flex;
-    flex-direction: row;
     justify-content: space-around;
-}
-@media (max-width: 768px) {
-.bodega {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.info1 {
-    height: 60%;
-    width: 60%;
-    margin-top: 12%;
-    margin-left: 60%;
-}
-}
-
-@media (max-width: 460px) {
-.bodega {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
-}
-
-.info1 {
-    height: 60%;
-    width: 60%;
-    margin-top: 12%;
-    margin-left: 5%;
-    display: flex;
-}
-}
-
-.info1 {
-    height: 30%;
-    width: 30%;
-    margin-top: 12%;
-    margin-left: 5%;
-}
-
-.info2 {
-    height: 30%;
-    width: 30%;
-    margin-top: 10%;
-    margin-right: 5%;
 }
 
 .bodegatext1 {
-    margin-top: 18%;
+    margin-top: 200px;
+}
+
+.info1, .info2 {
+    width: 30%;
+    margin-top: 10%;
 }
 
 .video-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
 }
 
 .video1 {
-  width: 70%;
-  height: 50%;
-  max-width: 800px;
-  aspect-ratio: 16 / 9;
-  border-radius: 20px;
-  border: none;
+    width: 70%;
+    aspect-ratio: 16/9;
+    border-radius: 20px;
+    border: none;
 }
 
-
-img,iframe {
+img, iframe {
     width: 100%;
     vertical-align: middle;
 }
 
-
-
-/* OPINIONS */
+/* Reseñas */
 
 .fondobody2 {
     background-image: url(https://img.freepik.com/fotos-premium/fondo-frutas-uvas-uvas-verdes-arriba-panorama_770123-506.jpg);
@@ -464,300 +247,81 @@ img,iframe {
     background-size: 100%;
 }
 
-
 .wrapper {
-  z-index: 1;
-  position: relative;
-  text-align: center;
-  backdrop-filter: blur(10px);
-  width: 100%;
-  height: 100%;
-  /* max-width: 900px; */
+    position: relative;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    width: 100%;
+    height: 100%;
 }
-
 
 .op {
     padding: 40px;
     border: 5px rgb(193, 215, 26) solid;
     background-color: rgb(234, 237, 203);
     border-radius: 5%;
-    height: fit-content;
     width: 300px;
-    height: 300%;
-    margin-bottom: 100px;
+    margin: 100px auto;
 }
-
-@media (max-width: 100px) {
-    .op {
-        margin-top: 10%;
-        padding: 40px;
-        border: 5px rgb(247, 188, 229) solid;
-        border-radius: 5%;
-        height: fit-content;
-        width: 300px;
-        height: 300%;
-        margin-left: 5%;
-    }
-}
-
-@media (max-width: 500px) {
-    .op {
-        margin-top: 10%;
-        padding: 40px;
-    }
-}
-
-@media (max-width: 800px) {
-    .op {
-        margin-top: 10%;
-        padding: 40px;
-    }
-}
-
 
 .container {
     display: flex;
     justify-content: space-around;
 }
 
-@media (max-width: 768px) {
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-}
-
-@media (max-width: 460px) {
-.container {
-    display: flex;
-    justify-content: space-around;
-}
-}
-
+/* Entradas */
 
 form {
-    margin-left: 35%;
     width: 30%;
-    margin-top: 5%;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.relleno { margin-bottom: 10%; }
+
+.container4 {
     display: flex;
     justify-content: center;
-    flex-direction: column;
 }
-
-.relleno {
-    margin-bottom: 10%;
-}
-
-
-/* ENTRADAS */
 
 .container5 {
     display: flex;
     flex-direction: column;
-    height:100%;
     width: 5%;
     margin-top: 5%;
 }
 
-.container4 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.boton4 {
-    background-color: rgb(255, 255, 255);
-    font-weight: bold;
-}
-
-.boton4:hover {
+.boton4, .boton5, .boton6 {
     background-color: rgb(193, 215, 26);
 }
 
+.boton4 {
+    background-color: #fff;
+    font-weight: bold;
+}
+
+.boton4:hover,
+.boton4:focus,
 .boton4:active {
     background-color: rgb(193, 215, 26);
 }
 
-.boton4:focus {
-    background-color: rgb(193, 215, 26);
-}
-
-.boton5 {
-    background-color: rgb(193, 215, 26);
-}
-
-.boton6 {
-    background-color: rgb(193, 215, 26);
-}
-
-
-
-/* EFECTO */
-
+/* Animaciones */
 
 .tracking-in-contract {
-	-webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
-	        animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	animation: tracking-in-contract 0.8s cubic-bezier(0.215,0.610,0.355,1.000) both;
 }
 
-/* ----------------------------------------------
- * Generated by Animista on 2025-6-15 13:32:17
- * Licensed under FreeBSD License.
- * See http://animista.net/license for more info. 
- * w: http://animista.net, t: @cssanimista
- * ---------------------------------------------- */
-
-/**
- * ----------------------------------------
- * animation tracking-in-contract
- * ----------------------------------------
- */
-@-webkit-keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
-}
 @keyframes tracking-in-contract {
-  0% {
-    letter-spacing: 1em;
-    opacity: 0;
-  }
-  40% {
-    opacity: 0.6;
-  }
-  100% {
-    letter-spacing: normal;
-    opacity: 1;
-  }
+  0% { letter-spacing: 1em; opacity: 0; }
+  40% { opacity: 0.6; }
+  100% { letter-spacing: normal; opacity: 1; }
 }
 
+/*  */
 
-
-
-/* calculo */
-
-
-
-
-
-
-/* entradas  */
-
-:root {
-    --input-padding: 10px;
-    --input-margin: 0.5rem 0 0 0;
-}
-
-/* Simple Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-header,
-main {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-/* Styling the form inside #foodMenu */
-#foodMenu form {
-    max-width: 100%;
-    min-height: fit-content;
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    font-family: var(--font-family);
-    border: #57c97f 5px solid;
-    border-radius: 40px;
-}
-
-#foodMenu form div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: var(--input-margin);
-    gap: 2rem;
-}
-
-#foodMenu form label {
-    font-size: 1.4rem;
-    width: 80%;
-    min-width: 5rem;
-    margin: var(--input-margin);
-    color: var(--primary-color);
-}
-
-#foodMenu form input[type="number"] {
-    font-size: 1.4rem;
-    width: 20%;
-    min-width: 3rem;
-    color: var(--primary-color);
-    padding: var(--input-padding);
-    margin: var(--input-margin);
-    border: 1px solid var(--primary-color);
-    border-radius: 5px;
-}
-
-#foodMenu form input[type="number"]:focus {
-    outline: none;
-    color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-    box-shadow: 0 0 5px var(--secondary-color);
-}
-
-#foodMenu form .total-price-cont {
-    font-size: 1.6rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 2rem 0 0 0;
-}
-
-#foodMenu form #buyFood.disabled {
-    background-color: #ccc;
-    color: #666666;
-    cursor: not-allowed;
-}
-
-#foodMenu form .total-price-cont p {
-    color: var(--accent-color);
-}
-
-#foodMenu form input[type="submit"] {
-    padding: var(--input-padding);
-    margin: var(--input-margin);
-    background-color: var(--secondary-color);
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-bottom: 0.2rem;
-    border: white 1px solid;
-    text-transform: uppercase;
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-
-#foodMenu form input[type="submit"]:hover {
-    background-color: white;
-    color: var(--secondary-color);
-    border: 1px solid var(--secondary-color);
-}
 
 .galeria2 {
     display: flex;
@@ -788,7 +352,6 @@ main {
 
 .info-exp {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -798,7 +361,6 @@ main {
     font-family: "Playfair Display", serif;
     font-size: 1.2em;
     color: rgb(69, 56, 68);
-    margin: 0;
 }
 
 .info-exp input[type="number"] {
@@ -817,42 +379,136 @@ main {
     color: rgb(97, 23, 23);
 }
 
+/* Media Queris */
 
-@media screen and (max-width: 1200px) {
-    section {
-        padding: 3em 10%;
+/*Ordenador */
+@media (min-width: 1025px) {
+    .viñedo, .bodega, .sect, .calculo {
+        flex-direction: row;
+        justify-content: space-around;
     }
+    .galeria > figure,
     .galeria2 > figure {
-        width: 45%;
+        width: 25%;
     }
 }
 
-@media screen and (max-width: 650px) {
-    section > h2 {
-        font-size: 1.5em;
+/*Tablet */
+@media (max-width: 1024px) and (min-width: 769px) {
+    h1 { font-size: 40px; }
+
+    .menu ul { gap: 16px; }
+
+    .viñedo, .bodega, .sect, .calculo {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .galeria > figure,
+    .galeria2 > figure { width: 45%; }
+
+    footer {
+        width: 390px;
+        height: 200px;
+        margin-left: 0px;
+    }
+
+
+        .options a {
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.contact {
+    margin-top: 50px;
+    font-size: 8px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .form {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    .container {
+        display: flex; 
+        flex-direction: column;
     }
 }
 
-@media screen and (max-width: 450px) {
-    .galeria2 > figure,
-    .galeria2 > iframe {
+/* Móvil */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .viñedo, .bodega, .sect, .calculo {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria > figure,
+    .galeria2 > figure {
         width: 100%;
     }
-    .galeria2 > figure > figcaption {
-        opacity: 1;
-        position: static;
-        height: auto;
-        background-color: transparent;
-        color: black;
-        font-size: 1em;
-        font-weight: normal;
-        justify-content: start;
+
+    form {
+        width: 90%;
+        margin: auto;
+    }
+
+    footer {
+        width: 390px;
+        height: 200px;
+        margin-left: 0px;
+    }
+
+    .options a {
+    color: #fff;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.contact {
+    margin-top: 50px;
+    font-size: 8px;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+    .boton-txt {
+        width: 80%;
+        margin: 20px auto;
+    }
+
+    .experiencia-item {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .info-exp {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+
+    .container {
+        display: flex; 
+        flex-direction: column;
     }
 }
-
-.calculo {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
