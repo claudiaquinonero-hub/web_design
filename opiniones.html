@@ -11,21 +11,31 @@
         <!-- CSS -->
          <link href="CSS/style.css" rel="stylesheet" type="text/css">
     </head>
-    <body class="fondobody2">
-        <div class="wrapper">
-            <nav id="pr-menu" class="menu">
+    <body>
+
+        <div class="cabecera">
+            <nav id="menu">
+            <div>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+                <p onclick="openMenu()">Menú</p>
                 <ul>
                     <li>
-                        <a href="index.html">Menú</a>
+                        <a href="informacion.html" onclick="closeMenu()">Información</a>
                     </li>
                     <li>
-                        <a href="informacion.html">Información</a>
+                        <a href="index.html" onclick="closeMenu()">Menú</a>
                     </li>
                     <li>
-                        <a href="entradas.html">Entradas</a>
+                        <a href="entradas.html" onclick="closeMenu()">Entradas</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                        <p2 onclick="closeMenu()">Volver</p2>
                     </li>
                 </ul>
-            </nav>
+                </div>
+                </nav>
+                </div>
 
             <header>
                 <h1>Reseñas</h1>

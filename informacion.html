@@ -17,14 +17,28 @@
         <div class="cabecera">
             <div class="wrapper">
            <div class="fondo">
-  <nav id="pr-menu" class="menu">
-      <ul>
-          <li><a href="index.html">Menú</a></li>
-          <li><a href="entradas.html">Entradas</a></li>
-          <li><a href="opiniones.html">Reseñas</a></li>
-      </ul>
-  </nav>
-
+  <nav id="menu">
+            <div>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+                <p onclick="openMenu()">Menú</p>
+                <ul>
+                    <li>
+                        <a href="index.html" onclick="closeMenu()">Menú</a>
+                    </li>
+                    <li>
+                        <a href="opiniones.html" onclick="closeMenu()">Reseñas</a>
+                    </li>
+                    <li>
+                        <a href="entradas.html" onclick="closeMenu()">Entradas</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                        <p2 onclick="closeMenu()">Volver</p2>
+                    </li>
+                </ul>
+                </div>
+                </nav>
+                </div>
 
   <div class="start" id="inicio">
                 <div class="start-text">

@@ -13,19 +13,28 @@
     </head>
     <body>
         <div class="wrapper">
-            <nav id="pr-menu" class="menu">
+            <nav id="menu">
+            <div>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+                <p onclick="openMenu()">Menú</p>
                 <ul>
                     <li>
-                        <a href="index.html">Menú</a>
+                        <a href="informacion.html" onclick="closeMenu()">Información</a>
                     </li>
                     <li>
-                        <a href="informacion.html">Información</a>
+                        <a href="opiniones.html" onclick="closeMenu()">Reseñas</a>
                     </li>
                     <li>
-                        <a href="opiniones.html">Reseñas</a>
+                        <a href="index.html" onclick="closeMenu()">Menú</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                        <p2 onclick="closeMenu()">Volver</p2>
                     </li>
                 </ul>
-            </nav>
+                </div>
+                </nav>
+                </div>
 
             <header>
                 <h1>Entradas</h1>
